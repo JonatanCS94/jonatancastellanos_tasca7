@@ -21,7 +21,14 @@ function calcularsiglo(a){
 
 }
 
-function calcularaño(b){
+function calcularanyo(b){
+//var b = Math.trunc(ParseInt(b.toString().substr(-2))/4);
+
+var n = ParseInt(b.toString().substr(-2));
+var m = n/4;
+var o = Math.trunc(m+n);
+
+return o;
 
 }
 
@@ -66,4 +73,6 @@ function calcularmes(b){
     }
 
 }
-function calcularmes (c);
+function calcularmes (c){
+
+}
