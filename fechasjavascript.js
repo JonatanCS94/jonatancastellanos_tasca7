@@ -1,21 +1,21 @@
 function calcularsiglo(a){
    
-    if (a>=1700 && a<=1799){
+    if (b>=1700 && b<=1799){
         return 5;
     }
-    else if (a>=1800 && a<=1899){
+    else if (b>=1800 && b<=1899){
         return 3;
     }
-   else if (a>=1900 && a<=1999){
+   else if (b>=1900 && b<=1999){
         return 1;
     }
-   else if (a>=2000 && a<=2099){
+   else if (b>=2000 && b<=2099){
         return 0;
     }
-    else if (a>=2100 && a<=2199){
+    else if (b>=2100 && b<=2199){
         return -2;
     }
-    else if (a>=2200 && a<=2299){
+    else if (b>=2200 && b<=2299){
         return -4;
     }
 
@@ -29,15 +29,6 @@ var m = n/4;
 var o = Math.trunc(m+n);
 
 return o;
-}
-
-function añobisiesto(d){
-    if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d == enero || d == febrero){
-        c = -1
-    }
-    else if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d != enero || d != febrero){
-        c = 0;
-    }
 }
 
 function calcularmes(c){
@@ -81,10 +72,10 @@ function calcularmes(c){
     }
 }
 function añobisiesto(d){
-    if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d == enero || d == febrero){
+    if (b.toString().substr(1, 1) == "2" || b.toString().substr(1, 1) == "4" && d == enero || d == febrero){
        return -1;
     }
-    else if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d != enero || d != febrero){
+    else if (b.toString().substr(1, 1) == "2" || b.toString().substr(1, 1) == "4" && d != enero || d != febrero){
         return 0;
     }
 }
