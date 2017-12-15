@@ -82,11 +82,19 @@ function calcularmes(c){
 }
 function añobisiesto(d){
     if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d == enero || d == febrero){
-        c = -1
+       return -1;
     }
     else if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d != enero || d != febrero){
-        c = 0;
+        return 0;
     }
 }
 
+function dia(e){
+    return e;
+    }
 
+function diadelasemana(r){
+    var w = a+b+c+d+e;
+    var z = w - 7;
+    return z;
+}
