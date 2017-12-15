@@ -29,10 +29,18 @@ var m = n/4;
 var o = Math.trunc(m+n);
 
 return o;
-
 }
 
-function calcularmes(b){
+function añobisiesto(d){
+    if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d == enero || d == febrero){
+        c = -1
+    }
+    else if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d != enero || d != febrero){
+        c = 0;
+    }
+}
+
+function calcularmes(c){
 
 
     if (b == "enero"){
@@ -71,8 +79,14 @@ function calcularmes(b){
     else if (b == "diciembre"){
         return 4;
     }
-
 }
-function calcularmes (c){
-
+function añobisiesto(d){
+    if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d == enero || d == febrero){
+        c = -1
+    }
+    else if (b.toString().substr(1, 1) == 2 || b.toString().substr(1, 1) == 4 && d != enero || d != febrero){
+        c = 0;
+    }
 }
+
+
