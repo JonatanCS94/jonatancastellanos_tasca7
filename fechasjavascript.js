@@ -1,29 +1,29 @@
-function calcularsiglo(a){
-   b = calcularanyo(b);
-    if (b>=1700 && b<=1799){
+function calcularsiglo(anyo){
+
+    if (anyo>=1700 && anyo<=1799){
         return 5;
     }
-    else if (b>=1800 && b<=1899){
+    else if (anyo>=1800 && anyo<=1899){
         return 3;
     }
-   else if (b>=1900 && b<=1999){
+   else if (anyo>=1900 && anyo<=1999){
         return 1;
     }
-   else if (b>=2000 && b<=2099){
+   else if (anyo>=2000 && anyo<=2099){
         return 0;
     }
-    else if (b>=2100 && b<=2199){
+    else if (anyo>=2100 && anyo<=2199){
         return -2;
     }
-    else if (b>=2200 && b<=2299){
+    else if (anyo>=2200 && anyo<=2299){
         return -4;
     }
 
 }
 
-function calcularanyo(b){
-var b = calcularanyo(b);
-var n = parseInt(b.toString().substr(-2));
+function calcularanyo(anyo){
+
+var n = parseInt(anyo.toString().substr(-2));
 var m = n/4;
 var o = Math.trunc(m);
 var p = n+o;
@@ -31,67 +31,64 @@ var p = n+o;
 return p;
 }
 
-function calcularmes(c){
-var c = calcularmes(c);
+function calcularmes(mes){
 
-    if (c == "enero"){
+    if (mes == "enero"){
         return 6;
     }
-    else if (c == "febrero"){
+    else if (mes == "febrero"){
         return 2;
     }
-    else if (c == "marzo"){
+    else if (mes == "marzo"){
         return 2;
     }
-    else if (c == "abril"){
+    else if (mes == "abril"){
         return 5;
     }
-    else if (c == "mayo"){
+    else if (mes == "mayo"){
         return 0;
     }
-    else if (c == "junio"){
+    else if (mes == "junio"){
         return 3;
     }
-    else if (c == "julio"){
+    else if (mes == "julio"){
         return 5;
     }
-    else if (c == "agosto"){
+    else if (mes == "agosto"){
         return 1;
     }
-    else if (c == "septiembre"){
+    else if (mes == "septiembre"){
         return 4;
     }
-    else if (c == "octubre"){
+    else if (mes == "octubre"){
         return 6;
     }
-    else if (c == "noviembre"){
+    else if (mes == "noviembre"){
         return 2;
     }
-    else if (c == "diciembre"){
+    else if (mes == "diciembre"){
         return 4;
     }
 }
-function añobisiesto(d){
-    var b = calcularanyo(b);
-    if (b.toString().substr(-1) == "2" || b.toString().substr(-1) == "4" && d == enero || d == febrero){
+function añobisiesto(anyo){
+    if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes == enero || mes == febrero){
        return -1;
     }
-    else if (b.toString().substr(-1) == "2" || b.toString().substr(-1) == "4" && d != enero || d != febrero){
+    else if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes != enero || mes != febrero){
         return 0;
     }
 }
 
-function dia(e){
-    var e = dia(e);
-    return e;
+function dia(){
+    return dia;
     }
 
-function diadelasemana(r){
-    var a = calcularsiglo(a);
-    var b = calcularanyo(b);
-    var c = calcularmes(c);
-    var d = añobisiesto(d);
-    var e = dia(e);
+function diadelasemana(resultado){
+    var a = calcularsiglo(anyo);
+    var b = calcularanyo(anyo);
+    var c = calcularmes(mes);
+    var d = añobisiesto(anyo);
+    var e = dia(dia);
     var w = a+b+c+d+e;
     var z = w - 7;
     if (z == 0){
