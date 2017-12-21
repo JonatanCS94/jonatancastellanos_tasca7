@@ -79,7 +79,7 @@ function añobisiesto(anyo){
     }
 }
 
-function dia(){
+function dia(dia){
     return dia;
     }
 
