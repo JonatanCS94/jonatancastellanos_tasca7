@@ -71,26 +71,23 @@ function calcularmes(mes){
     }
 }
 function añobisiesto(anyo){
-    if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes == enero || mes == febrero){
+    if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes == "enero" || mes == "febrero"){
        return -1;
     }
-    else if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes != enero || mes != febrero){
+    else if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes != "enero" || mes != "febrero"){
         return 0;
     }
 }
-
-function dia(dia){
-    return dia;
-    }
 
 function diadelasemana(resultado){
     var a = calcularsiglo(anyo);
     var b = calcularanyo(anyo);
     var c = calcularmes(mes);
     var d = añobisiesto(anyo);
-    var e = dia(dia);
+    var e = parseInt(dia);
     var w = a+b+c+d+e;
-    var z = w - 7;
+    var z = w % 7;
+
     if (z == 0){
         return "domingo";
     }
