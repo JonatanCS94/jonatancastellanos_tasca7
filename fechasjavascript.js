@@ -6,10 +6,10 @@ function calcularsiglo(anyo){
     else if (anyo>=1800 && anyo<=1899){
         return 3;
     }
-   else if (anyo>=1900 && anyo<=1999){
+    else if (anyo>=1900 && anyo<=1999){
         return 1;
     }
-   else if (anyo>=2000 && anyo<=2099){
+    else if (anyo>=2000 && anyo<=2099){
         return 0;
     }
     else if (anyo>=2100 && anyo<=2199){
@@ -74,7 +74,7 @@ function añobisiesto(anyo){
     if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes == "enero" || mes == "febrero"){
        return -1;
     }
-    else if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes != "enero" || mes != "febrero"){
+    else {
         return 0;
     }
 }
