@@ -1,5 +1,5 @@
 function calcularsiglo(anyo){
-
+    
     if (anyo>=1700 && anyo<=1799){
         return 5;
     }
@@ -18,26 +18,26 @@ function calcularsiglo(anyo){
     else if (anyo>=2200 && anyo<=2299){
         return -4;
     }
-/*En esta función se devuelven los números correspondientes en consecuencia del año que se ha introducido, según
-si éste corresponde a un siglo o a otro*/
+    /*En esta función se devuelven los números correspondientes en consecuencia del año que se ha introducido, según
+    si éste corresponde a un siglo o a otro*/
 }
 
 function calcularanyo(anyo){
-
-var n = parseInt(anyo.toString().substr(-2));
-var m = n/4;
-var o = Math.trunc(m);
-var p = n+o;
-
-return p;
-/*En esta función se devuelve el valor calculado progresivamente declarando diferentes variables. La "n"
-transforma el número de año introducido a String y se extraen los dos últimos números de éste, transformándolos
-continuamente en un Integer. La "m" divide entre cuatro el resultado de "n", la "o" trunca el valor de la variable anterior y 
-la "p" suma el valor de "n" y "o" tal y como se expone en la lectura recomendada*/
+    
+    var n = parseInt(anyo.toString().substr(-2));
+    var m = n/4;
+    var o = Math.trunc(m);
+    var p = n+o;
+    
+    return p;
+    /*En esta función se devuelve el valor calculado progresivamente declarando diferentes variables. La "n"
+    transforma el número de año introducido a String y se extraen los dos últimos números de éste, transformándolos
+    continuamente en un Integer. La "m" divide entre cuatro el resultado de "n", la "o" trunca el valor de la variable anterior y 
+    la "p" suma el valor de "n" y "o" tal y como se expone en la lectura recomendada*/
 }
 
 function calcularmes(mes){
-
+    
     if (mes == 1){
         return 6;
     }
@@ -109,7 +109,7 @@ function diadelasemana(resultado){
     var e = parseInt(dia);
     var w = a+b+c+d+e;
     var z = w % 7;
-
+    
     if (z == 0){
         return "domingo";
     }
