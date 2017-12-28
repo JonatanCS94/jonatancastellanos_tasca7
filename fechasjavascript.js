@@ -18,7 +18,8 @@ function calcularsiglo(anyo){
     else if (anyo>=2200 && anyo<=2299){
         return -4;
     }
-
+/*En esta función se devuelven los números correspondientes en consecuencia del año que se ha introducido, según
+si éste corresponde a un siglo o a otro*/
 }
 
 function calcularanyo(anyo){
@@ -29,6 +30,10 @@ var o = Math.trunc(m);
 var p = n+o;
 
 return p;
+/*En esta función se devuelve el valor calculado progresivamente declarando diferentes variables. La "n"
+transforma el número de año introducido en String y se extraen los dos últimos números de éste, transformándolos
+continuamente en un Integer. La "m" divide entre cuatro el resultado de "n", la "o" lo trunca y 
+la "p" suma el valor de "n" y "o" tal y como se expone en la lectura recomendada*/
 }
 
 function calcularmes(mes){
@@ -69,6 +74,7 @@ function calcularmes(mes){
     else if (mes == 12){
         return 4;
     }
+    //Esta función retorna el valor correspondientes según el número de mes introducido.
 }
 function añobisiesto(anyo){
     if (anyo%4==0){
@@ -90,6 +96,9 @@ function añobisiesto(anyo){
     else {
         return 0;
     }
+    /*Esta función retorna el valor correspondiente a la explicación establecida en la lectura recomendad. Se ha
+    realizado un if, un else if y un else para tal de hacerlo por medio de un método menos complejo y construirlo
+    paso a paso*/
 }
 
 function diadelasemana(resultado){
@@ -122,4 +131,6 @@ function diadelasemana(resultado){
     else if (z == 6){
         return "sábado";
     }
+    /*Esta función retorna el día de la semana correcto según las funciones que hemos aplicado, en base de
+    los cálculos que se establecen en la lectura recomendada*/
 }
