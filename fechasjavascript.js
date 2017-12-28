@@ -31,8 +31,8 @@ var p = n+o;
 
 return p;
 /*En esta función se devuelve el valor calculado progresivamente declarando diferentes variables. La "n"
-transforma el número de año introducido en String y se extraen los dos últimos números de éste, transformándolos
-continuamente en un Integer. La "m" divide entre cuatro el resultado de "n", la "o" lo trunca y 
+transforma el número de año introducido a String y se extraen los dos últimos números de éste, transformándolos
+continuamente en un Integer. La "m" divide entre cuatro el resultado de "n", la "o" trunca el valor de la variable anterior y 
 la "p" suma el valor de "n" y "o" tal y como se expone en la lectura recomendada*/
 }
 
@@ -74,7 +74,7 @@ function calcularmes(mes){
     else if (mes == 12){
         return 4;
     }
-    //Esta función retorna el valor correspondientes según el número de mes introducido.
+    //Esta función retorna el valor correspondiente según el número de mes introducido.
 }
 function añobisiesto(anyo){
     if (anyo%4==0){
@@ -96,8 +96,8 @@ function añobisiesto(anyo){
     else {
         return 0;
     }
-    /*Esta función retorna el valor correspondiente a la explicación establecida en la lectura recomendad. Se ha
-    realizado un if, un else if y un else para tal de hacerlo por medio de un método menos complejo y construirlo
+    /*Esta función retorna el valor correspondiente restultado del cálculo establecido en la lectura recomendada para obtener si el año es bisiesto o no. Se ha
+    realizado un if, un else if y un else para tal de hacerlo a través de un método menos complejo y construirlo
     paso a paso*/
 }
 
