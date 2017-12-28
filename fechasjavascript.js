@@ -101,14 +101,6 @@ function diadelasemana(resultado){
     var w = a+b+c+d+e;
     var z = w % 7;
 
-    console.log(a);
-    console.log(b);
-    console.log(c);
-    console.log(d);
-    console.log(e);
-    console.log(w);
-    console.log(z);
-
     if (z == 0){
         return "domingo";
     }
