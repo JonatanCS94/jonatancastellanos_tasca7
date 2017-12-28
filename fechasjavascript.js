@@ -33,46 +33,59 @@ return p;
 
 function calcularmes(mes){
 
-    if (mes == "enero"){
+    if (mes == 1){
         return 6;
     }
-    else if (mes == "febrero"){
+    else if (mes == 2){
         return 2;
     }
-    else if (mes == "marzo"){
+    else if (mes == 3){
         return 2;
     }
-    else if (mes == "abril"){
+    else if (mes == 4){
         return 5;
     }
-    else if (mes == "mayo"){
+    else if (mes == 5){
         return 0;
     }
-    else if (mes == "junio"){
+    else if (mes == 6){
         return 3;
     }
-    else if (mes == "julio"){
+    else if (mes == 7){
         return 5;
     }
-    else if (mes == "agosto"){
+    else if (mes == 8){
         return 1;
     }
-    else if (mes == "septiembre"){
+    else if (mes == 9){
         return 4;
     }
-    else if (mes == "octubre"){
+    else if (mes == 10){
         return 6;
     }
-    else if (mes == "noviembre"){
+    else if (mes == 11){
         return 2;
     }
-    else if (mes == "diciembre"){
+    else if (mes == 12){
         return 4;
     }
 }
 function añobisiesto(anyo){
-    if (anyo.toString().substr(-1) == "2" || anyo.toString().substr(-1) == "4" && mes == "enero" || mes == "febrero"){
-       return -1;
+    if (anyo%4==0){
+        if (mes==1 || mes==2){
+            return -1;
+        }    
+        else{
+            return 0;
+        }
+    }
+    else if (anyo%100!=0 && anyo%400==0){
+        if (mes==1 || mes==2){
+            return -1;
+        }    
+        else{
+            return 0;
+        }
     }
     else {
         return 0;
@@ -87,6 +100,14 @@ function diadelasemana(resultado){
     var e = parseInt(dia);
     var w = a+b+c+d+e;
     var z = w % 7;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(w);
+    console.log(z);
 
     if (z == 0){
         return "domingo";
