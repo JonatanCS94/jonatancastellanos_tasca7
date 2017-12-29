@@ -1,7 +1,8 @@
 body {
     background-color: #06ACD9;
 }
-
+/*Este css cambia el color del fondo de la pantalla (html>body)*/
 .piedepagina{
 	text-align:center;
 }
+/*Este css centra el pie de página que se inserta en el body del html*/
